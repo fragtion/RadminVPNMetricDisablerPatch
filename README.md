@@ -14,6 +14,8 @@ In many cases this can lead to problematic behavior, such as games all of a sudd
 
 Some users have requested that the Famatech (the developers of Radmin VPN) provide an option to toggle on/off this automatic metric in the application's settings, or as a configurable registry entry - however the developers have yet to implemented such functionality - for now it remains on the "wishlist" only (see https://radmin-club.com/radmin-vpn/radmin-vpn-interface-metric-automatic-change/ for more information).
 
+EDIT: Alternative workaround found! Create a Registry entry (DWORD (32-bit)) named "AdjustMetric", in "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Famatech\RadminVPN\1.0", and set its value to 0
+
 ## Radmin VPN Metric Disabler Patch
 Radmin VPN Control Service (`RvControlSvc.exe`)  is responsible for automatically resetting the metric to 1 for Radmin VPN interface each time the service is reset (eg, on each reboot).
 
