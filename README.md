@@ -1,5 +1,8 @@
 # RadminVPNMetricDisablerPatch
 
+### EDIT: Alternative workaround found!
+Simply create a Registry entry (DWORD (32-bit)) named "AdjustMetric", in "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Famatech\RadminVPN\1.0", and set its value to 0
+
 ## General Information
 Radmin VPN is a VPN service, which can also be used for free. The software is interesting because it makes it relatively easy to set up a VPN where you can play LAN games over the Internet amongst other things. Users can be invited to separate groups, which can also be private (password protected). The biggest disadvantage, however, is that all hosts are located in a large subnet with mask 255.0.0.0. This means that 16,777,214 hosts can be reached via broadcast or single IP query. Thus, games that use this method to find matches in the same network are practically unusable, as the sheer number of hosts can hardly be scanned. On the other hand, games with direct IP input can be played very well with it.
 
@@ -13,8 +16,6 @@ So if a game only uses the first network card, it uses the network card with the
 In many cases this can lead to problematic behavior, such as games all of a sudden not finding any servers hosted in the own LAN or local computers not being found for SMB access automatically any more. In order to omit this, it may help to reduce the metric to a lower priority/higher value. As this will be reset after a reboot automatically to value 1, it usually is sufficient to set the value to something like 20, to get access to the local network again and restart the system, once this is not desired any more.
 
 Some users have requested that the Famatech (the developers of Radmin VPN) provide an option to toggle on/off this automatic metric in the application's settings, or as a configurable registry entry - however the developers have yet to implemented such functionality - for now it remains on the "wishlist" only (see https://radmin-club.com/radmin-vpn/radmin-vpn-interface-metric-automatic-change/ for more information).
-
-EDIT: Alternative workaround found! Create a Registry entry (DWORD (32-bit)) named "AdjustMetric", in "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Famatech\RadminVPN\1.0", and set its value to 0
 
 ## Radmin VPN Metric Disabler Patch
 Radmin VPN Control Service (`RvControlSvc.exe`)  is responsible for automatically resetting the metric to 1 for Radmin VPN interface each time the service is reset (eg, on each reboot).
