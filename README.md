@@ -2,7 +2,9 @@
 
 ### EDIT: Alternative workaround found!
 Simply create a Registry entry (DWORD (32-bit)) named "AdjustMetric", with Value = 0, in:
+
 HKEY_LOCAL_MACHINE \ SOFTWARE \ Famatech \ RadminVPN \ 1.0 (for x86), Or:
+
 HKEY_LOCAL_MACHINE \ SOFTWARE \ WOW6432Node \ Famatech \ RadminVPN \ 1.0 (for x64)
 
 ## General Information
