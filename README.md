@@ -51,9 +51,12 @@ You can then set the interface metric value to your own preference, or adjust th
 ## Disclaimer
 Altering Radmin VPN's behaviour in this way is not officially supported right now, and may lead to undesirable effects, eg certain multiplayer games (which depend on metric being 1) no longer working as expected. So if something is not working for you after you applied this patch, please be sure to reinstall original software from https://www.radmin-vpn.com/ and test again, before creating any new support tickets at Radmin support forums/club.
 
-### Donate
-Did this make you happy? Please donate to show your support :)
+## Coffee
 
-BTC: 1Q4QkBn2Rx4hxFBgHEwRJXYHJjtfusnYfy
+Did this make you happy? I'd love to do more development like this! Please donate to show your support :)
 
-XMR: 4AfeGxGR4JqDxwVGWPTZHtX5QnQ3dTzwzMWLBFvysa6FTpTbz8Juqs25XuysVfowQoSYGdMESqnvrEQ969nR9Q7mEgpA5Zm
+**PayPal**: [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?business=2CGE77L7BZS3S&no_recurring=0)
+
+**BTC:** 1Q4QkBn2Rx4hxFBgHEwRJXYHJjtfusnYfy
+
+**XMR:** 4AfeGxGR4JqDxwVGWPTZHtX5QnQ3dTzwzMWLBFvysa6FTpTbz8Juqs25XuysVfowQoSYGdMESqnvrEQ969nR9Q7mEgpA5Zm
