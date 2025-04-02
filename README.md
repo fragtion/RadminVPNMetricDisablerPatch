@@ -3,9 +3,9 @@
 ### EDIT: Alternative workaround found!
 Simply create a Registry entry (DWORD (32-bit)) named "AdjustMetric", with Value = 0, in:
 
-HKEY_LOCAL_MACHINE\SOFTWARE\Famatech\RadminVPN\1.0 (for x86), Or:
+`HKEY_LOCAL_MACHINE\SOFTWARE\Famatech\RadminVPN\1.0` (for x86), Or:
 
-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Famatech\RadminVPN\1.0 (for x64)
+`HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Famatech\RadminVPN\1.0` (for x64)
 
 ## General Information
 Radmin VPN is a VPN service, which can also be used for free. The software is interesting because it makes it relatively easy to set up a VPN where you can play LAN games over the Internet amongst other things. Users can be invited to separate groups, which can also be private (password protected). The biggest disadvantage, however, is that all hosts are located in a large subnet with mask 255.0.0.0. This means that 16,777,214 hosts can be reached via broadcast or single IP query. Thus, games that use this method to find matches in the same network are practically unusable, as the sheer number of hosts can hardly be scanned. On the other hand, games with direct IP input can be played very well with it.
